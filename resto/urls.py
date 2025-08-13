@@ -14,4 +14,5 @@ urlpatterns = [
     path("profile/", GetUserInformationView.as_view(), name="Get/Create Jobs"),
     path("get-dash/", GetDashboardDetails.as_view()),
     path("apply-status/", AcceptAppplicationView.as_view()),
+    path("cron/", Home, name = "Start up cron")
 ]
